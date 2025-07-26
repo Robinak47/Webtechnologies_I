@@ -1,0 +1,19 @@
+#div1
+{
+    width: 400px;
+    height: 300px;
+    border: 1px, solid, black;
+    display: inline-block;
+    outline: 20px;
+    outline-style: solid;
+
+}
+
+#div2
+{
+     width: 400px;
+    height: 300px;
+    border: 1px, solid, black;
+     display: inline-block;
+    
+}

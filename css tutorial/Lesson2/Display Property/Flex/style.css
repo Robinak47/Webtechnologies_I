@@ -1,0 +1,12 @@
+.Flex-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Flex-item
+{
+    padding: 20px;
+    border: 1px solid black;
+}

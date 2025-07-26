@@ -1,0 +1,23 @@
+.div1
+{
+    background-color: aqua;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    border: 1px,solid,brown;
+    text-decoration: underline;
+    display: block;
+    width:1000px ;
+    height: 300px;
+    
+    
+}
+
+#d2
+{
+
+    width: 60%;
+    height: 10%;
+    border: 2px,solid,pink;
+    display: inline-flex;
+}

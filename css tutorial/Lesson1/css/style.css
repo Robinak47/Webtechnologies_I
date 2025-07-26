@@ -1,0 +1,49 @@
+
+/* Element Selector */
+body{
+    background-color: chocolate;
+}
+
+/* universal selector*/
+
+*
+{
+font-family: Cambria;
+font-size: 30px;
+}
+
+/* Class Selector */
+
+.head1
+{
+    color: white;
+}
+
+/* Id Selector */
+
+#s1
+{
+    display:flex;
+}
+
+
+/* Group selector */
+
+div, a
+{
+    background-color: green;
+    color: white;
+}
+
+/* desc..... selector */
+
+div p{
+    background-color: red;
+}
+
+/* Child selector */
+
+ul>li
+{
+    list-style: square;
+}

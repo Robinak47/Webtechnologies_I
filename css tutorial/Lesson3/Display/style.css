@@ -1,0 +1,14 @@
+.container
+{
+    border: 2px,solid,black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item
+{
+    border: 2px, solid, black;
+    height: 50px;
+    width: 200px;
+}

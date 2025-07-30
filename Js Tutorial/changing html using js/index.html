@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+   
+        <script>
+
+            function display()
+            {
+             
+                let userInput=document.getElementById("tx1").value;
+                
+
+                if(!userInp)
+                {
+                    alert(userInput);
+                }
+
+                else
+                {
+                    document.getElementById("sp1").innerHTML="<br> Field cannot be empty.";
+                    document.getElementById("sp1").style.color="Red";
+                }
+
+            }
+        </script>
+        
+  
+    </head>
+
+    <body>
+        
+
+        <input type="text" id="tx1" placeholder="input id">
+        <span id="sp1"></span>
+      
+
+        <button  value="click me" onclick="display()"> Click me</button>
+
+
+        
+    </body>
+</html>

@@ -7,12 +7,12 @@
         </script>
     </head>
     <body>
-        <form action="" method="" id="myForm" onsubmit="return validationForm()">
+        <form action="" method="" id="myForm" onsubmit="return validationForm()" >
             <label for="userName">User Name:</label>
             <input type="text" id="userName"><br>
             <span id="nameErr"></span><br>
-             <label for="age" id="age">Age:</label>
-            <input type="text"><br>
+             <label for="age" >Age:</label>
+            <input type="text" id="age"><br>
             <span id="ageErr"></span><br>
              <label for="gender">Gender:</label>
             <input type="radio" id="maleRB" name="gender" value="male">Male
@@ -25,13 +25,14 @@
             <span id="dishErr"></span><br><br>
             <label for="role">Role:</label>
             <select id="role">
+                <option id="empty" value="">Chose a option</option>
                 <option id="foodMaker" value="foodMaker">Food Maker</option>
                 <option id="customer" value="customer">Customer</option>
                 <option id="manager" value="manager">Manager</option>
                 
             </select>
             <br><span id="roleErr"></span><br>
-            <input type="button" id="submitBtn" value="submit">
+            <input type="submit" value="submit">
 
             
             

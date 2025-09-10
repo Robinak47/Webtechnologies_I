@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <script>
+            const student ={
+                "firstName" : "Mr. ",
+                "secondName" : "Meow",
+                "cgpa": 3.99,
+                "completedCredit" : 104
+             };
+
+             /*console.log(student.firstName);
+             console.log(student.secondName);
+             console.log(student.cgpa);
+             console.log(student.completedCredit);*/
+
+             var jsonObj= JSON.stringify(student);
+
+             console.log(jsonObj);
+
+             let num1=10;
+             var jsobj2=JSON.stringify(num1);
+             console.log(jsobj2);
+
+             var jsonTojs=JSON.parse(jsonObj);
+             console.log(jsonTojs.firstName);
+             console.log(jsonTojs.secondName);
+             console.log(jsonTojs.cgpa);
+             console.log(jsonTojs.completedCredit);
+
+             var jsonTojs2=JSON.parse(jsobj2);
+             console.log(jsonTojs2);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

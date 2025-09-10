@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+function loadDoc() {
+  const xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if(this.readyState==0)
+    {
+      console.log("Request is not initalized");
+    }
+
+    if(this.readyState==1)
+    {
+      console.log("Server Connection established");
+    }
+
+    if(this.readyState==2)
+    {
+      console.log("Request Received");
+    }
+
+    if(this.readyState==3)
+    {
+      console.log("Request is Processing");
+    }
+
+    console.log(this.status);
+
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+
+    if (this.readyState == 4 && this.status == 404) {
+      document.getElementById("demo").innerHTML ="Page not found";
+    }
+  };
+  xhttp.open("GET", "myText2.txt",false);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
